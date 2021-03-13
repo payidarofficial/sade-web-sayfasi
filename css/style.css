@@ -1,0 +1,115 @@
+/* Pâyidar */
+
+/* Fontlar */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap'); /* 'Montserrat' */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap'); /* 'Work Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap'); /* 'Roboto Mono', monospace; */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap'); /* 'Quicksand' */
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap'); /* 'Jura', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap'); /* 'Sacramento', cursive; */
+
+/* Genel Css */
+body{
+    background-color: #171717;
+    margin: 0;
+}
+
+/* Class & Div Css */
+#head{
+    background-color: #1c1c1c;
+    padding: 1.5em;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, .2);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+#head > #flex-grow{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#head > #flex-grow > div{
+    padding: 8px;
+}
+#head > #flex-grow > div h1{
+    font-family: 'Jura', sans-serif;
+    font-weight: bolder;
+    color: white;
+    position: relative;
+    top: 30px;
+}
+#head > #flex-grow > div img{
+    width: 150px;
+    box-shadow: 0px 0px 0px 2px white;
+    border-radius: 500%;
+    transition: 250ms ease-in-out;
+}
+#head > #flex-grow > div img:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 0px 1px white;
+    filter: grayscale(100%);
+}
+#head > #flex-grow > div a{
+    font-family: 'Jura', sans-serif;
+    font-weight: bolder;
+    color: white;
+    padding: 6px;
+    text-decoration: none;
+    position: relative;
+    top: 65px;
+    transition: 250ms ease;
+}
+#head > #flex-grow > div a:hover{
+    color: #777;
+}
+
+/* ============================ */
+
+#content{
+    margin-top: 5em;
+}
+#content > #container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+#content > #container > div{
+    background-color: #1c1c1c;
+    padding: 8px;
+    border-radius: 20px;
+    padding: 1.5em;
+    margin: 10px;
+    width: 600px;
+    transition: 250ms ease;
+}
+#content > #container > div:hover{
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, .5)
+}
+#content > #container > div h1{
+    font-family: 'Jura', sans-serif;
+    font-weight: bolder;
+    color: white;
+}
+#content > #container > div p{
+    font-family: 'Jura', sans-serif;
+    font-weight: lighter;
+    color: white;
+}
+#content > #container > div hr{
+    background: #555;
+    opacity: .2;
+    height: 1.5px;
+    border: none;
+}
+
+/* ============================ */
+
+#title h1{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bolder;
+    color: orange;
+    text-align: center;
+    margin-top: -10px;
+}
